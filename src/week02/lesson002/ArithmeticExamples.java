@@ -56,12 +56,26 @@ public class ArithmeticExamples {
 		
 		
 		
+//		String name;
+//		Scanner scan = new Scanner(System.in);
+//		System.out.print("Lütfen isminizi giriniz: ");
+//		
+//		name = scan.nextLine();
+//		System.out.println("Merhaba" +" " + name);
+	
+		
+		
 		String name;
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Lütfen isminizi giriniz: ");
-		
 		name = scan.nextLine();
-		System.out.println("Merhaba" +" " + name);
+		
+		int number;
+		Scanner scan1 = new Scanner(System.in);
+		System.out.print("Lütfen yaşınızı giriniz: ");
+		number = scan1.nextInt();
+		
+		System.out.println("Merhaba " + number +" " + "yasındaki" + " "+ name);
 		
 		
 		
