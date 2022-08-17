@@ -14,6 +14,7 @@ public class ArithmeticOperators {
 		double sum;
 		double sub, multi, mod, div;
 		
+		
 		sum = x+y;
 		sub = x-y;
 		multi = x*y;
@@ -35,6 +36,8 @@ public class ArithmeticOperators {
 //		double c = x-=5;
 //		
 //		System.out.println(c);
+		
+
 		
 		
 	}

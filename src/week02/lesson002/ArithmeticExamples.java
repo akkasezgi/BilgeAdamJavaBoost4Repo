@@ -1,6 +1,7 @@
 package week02.lesson002;
 
-import java.util.Scanner;
+
+
 
 public class ArithmeticExamples {
 
@@ -65,23 +66,45 @@ public class ArithmeticExamples {
 	
 		
 		
-		String name;
-		Scanner scan = new Scanner(System.in);
-		System.out.print("Lütfen isminizi giriniz: ");
-		name = scan.nextLine();
+//		String name;
+//		Scanner scan = new Scanner(System.in);
+//		System.out.print("Lütfen isminizi giriniz: ");
+//		name = scan.nextLine();
+//		
+//		int number;
+//		Scanner scan1 = new Scanner(System.in);
+//		System.out.print("Lütfen yaşınızı giriniz: ");
+//		number = scan1.nextInt();
+//		
+//		System.out.println("Merhaba " + number +" " + "yasındaki" + " "+ name);
 		
-		int number;
-		Scanner scan1 = new Scanner(System.in);
-		System.out.print("Lütfen yaşınızı giriniz: ");
-		number = scan1.nextInt();
 		
-		System.out.println("Merhaba " + number +" " + "yasındaki" + " "+ name);
+//		String name;
+//		Scanner scan = new Scanner(System.in);
+//		System.out.print("Lütfen bir özelliğinizi yazınız: ");
+//		name = scan.nextLine();
+//		
+//		int sayi;
+//		Scanner scan1 = new Scanner(System.in);
+//		System.out.print("Lütfen boyunuzu giriniz: ");
+//		sayi = scan1.nextInt();
+//		
+//		System.out.println(name + " " + "özelliğinde" + " " + sayi + " " +"boyunda bir Sibel");
+//		
 		
-		
+	
 		
 		
 	}
-		
+	
+	
+	
+	
+	
+	
+	
+	
+	
 				
 				
 		
