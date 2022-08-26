@@ -56,7 +56,7 @@ public class ShapeTest {
 			 	System.out.println("Cevre : " + perimeter);
 			 	System.out.println("Alan : " + area);
 			}
-			
+			scan.close();
 		}
 	}
 	
