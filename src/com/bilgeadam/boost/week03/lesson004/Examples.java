@@ -1,4 +1,4 @@
-package com.bilgeadam.boost.week03;
+package com.bilgeadam.boost.week03.lesson004;
 
 import java.util.Scanner;
 
@@ -191,21 +191,41 @@ public class Examples {
 //		sc.close();
 		
 		
-		int n;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("please enter a number : ");
-		n = sc.nextInt();
-		
-		sc.close();
-		
-
-		int factoriell; 
-		
-		for ( int i=1; i<=n;i++) {
+//		int n;
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("please enter a number : ");
+//		n = sc.nextInt();
+//		
+//		sc.close();
+//		
+//
+//		int factoriell; 
+//		
+//		for ( int i=1; i<=n;i++) {
+//			
+//			
+//		}
 			
-			
-		}
-			
+//		int a;
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("enter a number: ");
+//		a = sc.nextInt();
+//		
+//	
+//		do {
+//			System.out.println("a if a numb er:" + a );
+//			
+//		} while (a<=2);
+//		
+//		a++;
+//		System.out.println("Please enter a big number: ");
+//			
+//			break;
+//			
+		
+		Atm atm = new Atm();
+		atm.menu();
+		
 		
 		
 		
