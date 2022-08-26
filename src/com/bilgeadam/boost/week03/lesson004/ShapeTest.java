@@ -3,9 +3,6 @@ package com.bilgeadam.boost.week03.lesson004;
 import java.util.Scanner;
 
 public class ShapeTest {
-	private Scanner scan;
-	private int value;
-	
 	
 	
 	public static void main(String[] args) {
@@ -59,7 +56,9 @@ public class ShapeTest {
 			}
 			
 		
+			
 		}
+		
 		
 	}
 	
