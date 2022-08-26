@@ -54,7 +54,7 @@ public class ShapeTest {
 			 	int cevreHesabi = cevreHesapla(kenarlar);
 			 	double alanHesabi = alanHesapla(kenarlar);
 			 	System.out.println("Cevre : " + cevreHesabi);
-			 	System.out.println("Alan : " + cevreHesabi);
+			 	System.out.println("Alan : " + alanHesabi);
 			}
 			
 		}
@@ -73,8 +73,18 @@ public class ShapeTest {
 			double u = cevreHesapla(kenarlar) / 2;
 		  	return Math.sqrt(u * (u - kenarlar[0]) * (u - kenarlar[1]) * (u - kenarlar[2]));
 		} else {
-			
-			return 0;
+			int kisaKenar = 0;
+			int uzunKenar = 0;
+			for (int i = 0; i < kenarlar.length; i++) {
+				if (kenarlar[i] >= kenarlar[(i+1) % 4]) {
+					uzunKenar = kenarlar[i];
+				} else {
+					kisaKenar = kenarlar[i];
+				}
+			}
+			System.out.println("KisaKenar : " + kisaKenar);
+			System.out.println("UzunKenar : " + uzunKenar);
+			return kisaKenar * uzunKenar;
 		}
 	}
 	
