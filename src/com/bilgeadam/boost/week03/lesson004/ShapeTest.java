@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ShapeTest {
 	private Scanner scan;
-	private int deger;
+	private int value;
 	
 	
 	
@@ -16,75 +16,75 @@ public class ShapeTest {
 
 	private void readInput() {
 		Scanner scan = new Scanner(System.in);
-		int[] kenarlar = new int[4];
+		int[] sides = new int[4];
 		
 		while (true) {
 			System.out.println("Lutfen 1. kenar uzunlugunu giriniz (0 ile sonlandir) : ");
-			kenarlar[0] = scan.nextInt();
-			if (kenarlar[0] == 0) {
+			sides[0] = scan.nextInt();
+			if (sides[0] == 0) {
 				System.out.println("0 kenarli sekil olamaz");
 				return;
-			} else if (kenarlar[0] == -1) {
+			} else if (sides[0] == -1) {
 				return;
 			}
 			
 			System.out.println("Lutfen 2. kenar uzunlugunu giriniz (0 ile sonlandir) : ");
-			kenarlar[1] = scan.nextInt();
-			if (kenarlar[1] == 0) {
+			sides[1] = scan.nextInt();
+			if (sides[1] == 0) {
 				System.out.println("1 kenarli sekil olamaz");
 				return;
-			} else if (kenarlar[1] == -1) {
+			} else if (sides[1] == -1) {
 				return;
 			}
 			
 			System.out.println("Lutfen 3. kenar uzunlugunu giriniz (0 ile sonlandir) : ");
-			kenarlar[2] = scan.nextInt();
-			if (kenarlar[2] == 0) {
+			sides[2] = scan.nextInt();
+			if (sides[2] == 0) {
 				System.out.println("2 kenarli sekil olamaz");
 				return;
-			} else if (kenarlar[2] == -1) {
+			} else if (sides[2] == -1) {
 				return;
 			}
 			
 			System.out.println("Lutfen 4. kenar uzunlugunu giriniz (0 ile sonlandir) : ");
-			kenarlar[3] = scan.nextInt();
-			if (kenarlar[3] == -1) {
+			sides[3] = scan.nextInt();
+			if (sides[3] == -1) {
 				return;
 			} else {
-			 	int cevreHesabi = cevreHesapla(kenarlar);
-			 	double alanHesabi = alanHesapla(kenarlar);
-			 	System.out.println("Cevre : " + cevreHesabi);
-			 	System.out.println("Alan : " + alanHesabi);
+			 	int perimeter = perimeterTotal(sides);
+			 	double area = areaTotal(sides);
+			 	System.out.println("Cevre : " + perimeter);
+			 	System.out.println("Alan : " + area);
 			}
 			
 		}
 	}
 	
-	private int cevreHesapla(int[] kenarlar) {
+	private int perimeterTotal(int[] sides) {
 		int sum = 0;
-		for (int i = 0; i < kenarlar.length; i++) {
-			sum += kenarlar[i];
+		for (int i = 0; i < sides.length; i++) {
+			sum += sides[i];
 		}
 		return sum;
 	}
 	
-	private double alanHesapla(int[] kenarlar) {
-		if (kenarlar.length == 3) {
-			double u = cevreHesapla(kenarlar) / 2;
-		  	return Math.sqrt(u * (u - kenarlar[0]) * (u - kenarlar[1]) * (u - kenarlar[2]));
+	private double areaTotal(int[] sides) {
+		if (sides.length == 3) {
+			double u = perimeterTotal(sides) / 2;
+		  	return Math.sqrt(u * (u - sides[0]) * (u - sides[1]) * (u - sides[2]));
 		} else {
-			int kisaKenar = 0;
-			int uzunKenar = 0;
-			for (int i = 0; i < kenarlar.length; i++) {
-				if (kenarlar[i] >= kenarlar[(i+1) % 4]) {
-					uzunKenar = kenarlar[i];
+			int shortSide = 0;
+			int longSide = 0;
+			for (int i = 0; i < sides.length; i++) {
+				if (sides[i] >= sides[(i+1) % 4]) {
+					longSide = sides[i];
 				} else {
-					kisaKenar = kenarlar[i];
+					shortSide = sides[i];
 				}
 			}
-			System.out.println("KisaKenar : " + kisaKenar);
-			System.out.println("UzunKenar : " + uzunKenar);
-			return kisaKenar * uzunKenar;
+			System.out.println("KisaKenar : " + shortSide);
+			System.out.println("UzunKenar : " + longSide);
+			return shortSide * longSide;
 		}
 	}
 	
