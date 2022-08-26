@@ -32,7 +32,7 @@ public class ShapeTestDeneme {
 	
 		int selection = scan.nextInt();
 		
-		if (side1 == -1 )  {
+		if ( side1 == -1 )  {
 			System.out.println("Lutfen sayi girdiginizden emin olunuz.");
 			break;
 		}
@@ -41,10 +41,12 @@ public class ShapeTestDeneme {
 	    }
 
 		scan.close();
-
+		
+		
 	}
 	
-	private boolean prosessSelection(int selection) {
+	
+	private boolean prosesSelection(int selection) {
 		
 		boolean returnValue = true;
 		

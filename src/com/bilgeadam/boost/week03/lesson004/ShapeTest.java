@@ -51,15 +51,20 @@ public class ShapeTest {
 			if (sides[3] == -1) {
 				return;
 			} else {
+			
 			 	int perimeter = perimeterTotal(sides);
 			 	double area = areaTotal(sides);
 			 	System.out.println("Cevre : " + perimeter);
 			 	System.out.println("Alan : " + area);
 			}
-			scan.close();
+			
+		
 		}
+		
 	}
 	
+	
+
 	private int perimeterTotal(int[] sides) {
 		int sum = 0;
 		for (int i = 0; i < sides.length; i++) {
@@ -69,10 +74,10 @@ public class ShapeTest {
 	}
 	
 	private double areaTotal(int[] sides) {
-		if (sides.length == 3) {
+		if (sides[3]==0) {
 			double u = perimeterTotal(sides) / 2;
 		  	return Math.sqrt(u * (u - sides[0]) * (u - sides[1]) * (u - sides[2]));
-		} else {
+		} else  {
 			int shortSide = 0;
 			int longSide = 0;
 			for (int i = 0; i < sides.length; i++) {
@@ -86,6 +91,8 @@ public class ShapeTest {
 			System.out.println("UzunKenar : " + longSide);
 			return shortSide * longSide;
 		}
+		
 	}
+	
 	
 }
