@@ -12,9 +12,9 @@ public class PrintFunction {
 		String surname = "Akkaş";
 		
 		
-		//System.out.println(name+" "+surname);
-		//System.out.println(name);
-		//System.out.println(surname);
+		System.out.println(name+" "+surname);
+		System.out.println(name);
+		System.out.println(surname);
 		
 		
 		

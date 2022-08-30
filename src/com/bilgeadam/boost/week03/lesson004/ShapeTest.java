@@ -3,16 +3,18 @@ package com.bilgeadam.boost.week03.lesson004;
 import java.util.Scanner;
 
 public class ShapeTest {
-	
+	 Scanner scan;
 	
 	public static void main(String[] args) {
 		ShapeTest shapeTest = new ShapeTest();
 		shapeTest.readInput();		
 		System.out.println("byeeeee.....");
+
 	}
 
 	private void readInput() {
-		Scanner scan = new Scanner(System.in);
+		scan = new Scanner(System.in);
+		
 		int[] sides = new int[4];
 		
 		while (true) {

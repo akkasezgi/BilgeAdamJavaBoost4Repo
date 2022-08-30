@@ -68,22 +68,24 @@ public class ChineseZodiac {
 
 		default:System.out.print("ERROR!!!"); 
 		
-		System.out.println("Do you wanna try again? Y/N" );
-		
-		
-			
-		
-		} 
-		while(answer.equalsIgnoreCase("Y"));{
-		
-		
+		System.out.println("Do you wanna try again? Y/N" );}
 		}
 		
+			
+		while
 		
-		sc.close();
 		
+		
+		
+		
+		
+		
+		
+	
+	
 		
 		}
 	}
-}
+	
+
 

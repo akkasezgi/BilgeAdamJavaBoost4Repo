@@ -41,7 +41,7 @@ public class BMIHesaplama {
 			
 		 else if (gender.equalsIgnoreCase("M")) {
 			 if (bmi < 20) {
-				 System.out.print("You are THIN ")
+				 System.out.print("You are THIN ");
 				 else if (bmi<25) {
 					 System.out.print("You are NORMAL ");
 				 }else if (bmi<30) {
